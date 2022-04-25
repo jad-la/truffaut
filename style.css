@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 20px;
+}
+.LogoRecherche{
+  display: flex;
+  width: 50%;
+  margin-left: 40px;
+}
+.Logo{
+  width: 40%;
+  float: left;
+  margin: auto;
+  padding: 5px 0;
+}
+
+
+label{
+  width: 40%;
+  float: right;
+  margin: auto;
+  margin-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+input{
+  
+  width: 85%;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+}
+.fa-magnifying-glass{
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.logo{
+  width: 70%;
+  height: 50%;
+  object-fit: scale-down;
+}
+.MagasinCompte{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 40px;
+}
+.after{
+  border-right: 1px solid rgb(82, 81, 81);
+  padding-right: 10px;
+  
+}
+.fa-location-dot{
+  font-size: 2rem;
+  color: #014e37;
+  margin-right: 10px;
+}
+.fa-user{
+  float: left;
+  font-size: 2rem;
+  margin-right: 10px;
+  text-align: center;
+  color: #014e37;
+}
+.compte{
+  float: right;
+}
+.fa-basket-shopping{
+  font-size: 2rem;
+  color: #014e37;
+}
+nav{
+  margin: 20px 20px;
+}
+.Nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+li{
+  list-style-type: none;
+  font-weight:600;
+}
+.Red{
+  color: brown;
+  
+}
+.slider{
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.slides{
+  width: calc(100vw* 2);
+  animation: carousel 20s infinite ease;
+}
+
+.slide{
+  float: left;
+  width: 100vw;
+  
+}
+.slide img{
+  width: 100%;
+  object-fit: fill;
+  height: 75vh;
+}
+
+@keyframes carousel {
+  0%{
+    transform: translateX(0);
+  }
+  
+  50%{
+    transform: translateX(-100vw);
+  }
+  
+  100%{
+    transform: translateX(0);
+  }
+  
+}
+
+h1{
+  color: #014e37;
+  text-align: center;
+  font-size: 3rem;
+  margin: 20px auto;
+  
+}
+.indispensables{
+  width: 80%;
+  margin: auto; 
+}
+.carteFidélité{
+  float: left;
+  height: 100%;
+}
+.indispensableProduits{
+  float: right;
+  width: 75%;
+  height: 410px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.slidesIndis{
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+.Box{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 20px;
+  height: 100%;
+  padding: 10px 20px;
+}
+.Box h2{
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+.imgGér{
+  height: 60%;
+}
+.Flex{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-circle-right{
+  font-size: 2rem;
+}
+span{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.toilePotager{
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 135px;
+  border-right: 1px solid rgb(82, 81, 81);
+  margin-bottom: 40px;
+}
+.Toile1{
+  position: relative;
+}
+.Toile1 h2{
+  position: absolute;
+  top: 35%;
+  font-size: 3rem;
+  color: white;
+  margin-left: 20px;
+}
+.Toile1 button{
+  position: absolute;
+  top: 60%;
+  width: 40%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: white;
+  background-color:#11112D ;
+  border: none;
+  height: 8%;
+  left: 30%;
+  border-radius: 25px;
+}
+.Potager2{
+  position: relative;
+}
+
+
+.Potager2 h2{
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  font-size: 3rem;
+  color: white;
+}
+.Potager2 button{
+  position: absolute;
+  top: 60%;
+  width: 40%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: white;
+  background-color:#11112D ;
+  border: none;
+  height: 8%;
+  left: 30%;
+  border-radius: 25px;
+}
+.Conseil{
+  width: 100vw;
+}
+.conseil{
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-areas: 
+  "titre  podcast"
+  "magazine podcat "
+  "conseil atelier"
+  "conseil bouton"
+  ;
+  gap: 20px;
+}
+.titre{
+  grid-area: titre;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  font-size: 3.5rem;
+  color: #136A55;
+  margin-right: 20px;
+}
+
+.magazine{
+  grid-area: magazine;
+  background-color: rgb(163, 123, 70);
+ 
+  
+}
+.podcast{
+  grid-area: podcast;
+  width: 500px;
+  margin-top: 100px;
+  
+}
+.LeConseil{
+  grid-area: conseil;
+  width: 400px;
+}
+
+.bouton{
+  grid-area: bouton;
+}
+.atelier{
+  grid-area: atelier;
+}
+.horizontale{
+  width: 600px;
+
+}
+.verticale{
+  width: 500px;
+}
+.marg{
+  margin-top: 15px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.margTop{
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 15px;
+  color: grey;
+}
+.bouton{
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color:#11112D ;
+  color: white;
+  margin: auto;
+}
+
+.h3Footer{
+  width: 100vw;
+}
